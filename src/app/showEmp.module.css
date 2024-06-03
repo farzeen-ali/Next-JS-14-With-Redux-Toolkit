@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8eaf6;
+    padding: 20px;
+    height: 70vh;
+}
+.title{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
