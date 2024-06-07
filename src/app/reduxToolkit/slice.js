@@ -16,7 +16,7 @@ const Slice = createSlice({
             }
             state.employees.push(data)
         }
-    }
+    } 
 });
 
 export const {addEmployee} = Slice.actions;
