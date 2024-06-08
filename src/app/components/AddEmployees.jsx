@@ -9,13 +9,14 @@ const AddEmployees = () => {
   const [empName, setEmpName] = useState('');
   const dispatch = useDispatch();
   const dataDispatch = () => {
-    console.log(empName)
+    // console.log(empName)
     dispatch(addEmployee(empName))
+    setEmpName('');
   }
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Add Employees</h2>
-      <input className={styles.input} onChange={(e) => setEmpName(e.target.value)} type="text" placeholder="Enter Employee Data" />
+      <input className={styles.input} value={empName} onChange={(e) => setEmpName(e.target.value)} type="text" placeholder="Enter Employee Data" />
       <button onClick={dataDispatch} className={styles.button}>Add</button>
     </div>
   );

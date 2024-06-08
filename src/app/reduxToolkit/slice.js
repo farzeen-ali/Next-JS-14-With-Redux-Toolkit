@@ -9,7 +9,7 @@ const Slice = createSlice({
     initialState,
     reducers:{
         addEmployee:(state, action)=>{
-            console.log(action)
+            // console.log(action)
             const data ={
                 id:nanoid(),
                 name:action.payload
