@@ -15,9 +15,15 @@ const Slice = createSlice({
                 name:action.payload
             }
             state.employees.push(data)
+        },
+        removeEmployee:(state, action)=> {
+            const data = state.employees.filter((item) => {
+                return item.id !== action.payload
+            })
+            state.employees = data;
         }
     } 
 });
 
-export const {addEmployee} = Slice.actions;
+export const {addEmployee, removeEmployee} = Slice.actions;
 export default Slice.reducer; 
