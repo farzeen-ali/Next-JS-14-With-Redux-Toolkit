@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const DeleteEmployee = () => {
     const data = useSelector((value) => value.employees)
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); 
   return (
     <>
      <h2>Delete Employee</h2>
