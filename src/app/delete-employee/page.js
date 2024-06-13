@@ -4,7 +4,7 @@ import styles from '../showEmp.module.css';
 import { useDispatch, useSelector } from "react-redux";
 
 const DeleteEmployee = () => {
-    const data = useSelector((value) => value.employees)
+    const data = useSelector((value) => value.employeeData.employees)
     const dispatch = useDispatch(); 
   return (
     <>
