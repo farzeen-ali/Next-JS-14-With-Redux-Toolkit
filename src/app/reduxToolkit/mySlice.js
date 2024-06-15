@@ -10,7 +10,7 @@ const Slice = createSlice({
     reducers:{
         addStudents:(state, action) => {
             const data = {
-                id: nanoid,
+                id: nanoid(),
                 name: action.payload
             }
             state.students.push(data);
